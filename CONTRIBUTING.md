@@ -85,7 +85,7 @@ npm run tauri dev
 
 ## 提交前检查清单
 
-CI 会执行同样的命令，本地先跑一遍能省一轮往返：
+提交前请在本地跑一遍，维护者审阅时也会看这些结果：
 
 ```bash
 npm run typecheck                       # vue-tsc 类型检查
