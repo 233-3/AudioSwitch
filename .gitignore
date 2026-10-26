@@ -1,0 +1,52 @@
+# ---- 依赖目录 ----
+node_modules/
+src-tauri/target/
+
+# ---- 构建产物 ----
+dist/
+dist-ssr/
+*.tsbuildinfo
+src-tauri/gen/schemas/
+
+# ---- 日志 ----
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- 密钥与本地环境变量 ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+
+# ---- 本地环境配置（依赖镜像源等，因人而异） ----
+src-tauri/.cargo/
+
+# ---- 编辑器与工具 ----
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.local
+.workbuddy/
+
+# ---- 系统文件 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- 内部文档与本地调试脚本（不随开源仓库发布） ----
+PRODUCT.md
+VERIFICATION.md
+scripts/dev-ui-*.mjs

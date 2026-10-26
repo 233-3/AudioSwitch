@@ -1,0 +1,17 @@
+# 统一换行符：仓库内一律 LF，工作区按平台自动转换
+* text=auto eol=lf
+
+# 源码
+*.rs   text diff=rust
+*.ts   text
+*.vue  text
+*.mjs  text
+*.json text
+*.md   text
+*.css  text
+*.html text
+
+# 二进制资源，不做文本转换与行尾处理
+*.png  binary
+*.ico  binary
+*.exe  binary

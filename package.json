@@ -1,0 +1,30 @@
+{
+  "name": "audio-switch",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Windows 音频输出设备快速切换工具",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:only": "vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit",
+    "tauri": "tauri",
+    "icons": "node scripts/generate-icons.mjs"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.4",
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@tauri-apps/cli": "^2.12.4",
+    "@types/node": "^22.15.3",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "png-to-ico": "^2.1.8",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.7",
+    "vue-tsc": "^3.3.13"
+  }
+}

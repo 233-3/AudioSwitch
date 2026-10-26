@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Audio Switch",
+  "version": "0.1.0",
+  "identifier": "com.audioswitch.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Audio Switch",
+        "width": 900,
+        "height": 730,
+        "minWidth": 780,
+        "minHeight": 560,
+        "resizable": true,
+        "center": true,
+        "visible": false,
+        "decorations": true,
+        "transparent": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: asset: http://asset.localhost; style-src 'self' 'unsafe-inline'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "publisher": "Audio Switch",
+    "copyright": "Audio Switch",
+    "category": "Utility",
+    "shortDescription": "Windows 音频输出设备快速切换工具",
+    "longDescription": "常驻系统托盘，一键在多个音频输出设备之间循环切换。",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": ["SimpChinese", "English"],
+        "displayLanguageSelector": false
+      }
+    }
+  }
+}
