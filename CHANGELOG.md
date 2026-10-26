@@ -37,5 +37,5 @@
 - 已配置设备若 `endpointId` 变化（如重新插拔后系统重新分配），会标记为失效并要求手动重新选择，不做按名称自动绑定。
 - 二进制未做代码签名，首次运行可能出现 Windows SmartScreen 提示。
 
-[Unreleased]: https://github.com/QKSAMA/audio-switch/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/QKSAMA/audio-switch/releases/tag/v0.1.0
+[Unreleased]: https://github.com/233-3/AudioSwitch/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/233-3/AudioSwitch/releases/tag/v0.1.0

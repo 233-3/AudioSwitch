@@ -80,7 +80,7 @@ rustup-init.exe -y --profile default --default-toolchain stable-x86_64-pc-window
 
 ### 方式一：安装包（推荐）
 
-1. 到 [Releases](https://github.com/QKSAMA/audio-switch/releases) 下载最新的 `Audio Switch_<版本>_x64-setup.exe`；
+1. 到 [Releases](https://github.com/233-3/AudioSwitch/releases) 下载最新的 `Audio Switch_<版本>_x64-setup.exe`；
 2. 双击安装。安装范围是**当前用户**，不需要管理员权限，默认装到 `%LOCALAPPDATA%\Audio Switch`；
 3. 安装完成后应用会自动启动并驻留托盘（蓝色耳机图标）。
 
@@ -89,8 +89,8 @@ rustup-init.exe -y --profile default --default-toolchain stable-x86_64-pc-window
 ### 方式二：从源码构建
 
 ```bash
-git clone https://github.com/QKSAMA/audio-switch.git
-cd audio-switch
+git clone https://github.com/233-3/AudioSwitch.git
+cd AudioSwitch
 
 npm install                # 安装前端依赖
 npm run tauri dev          # 开发模式：启动 Vite + Tauri 窗口，支持热更新
@@ -193,7 +193,7 @@ audio-switch.exe --diagnose --switch "<endpointId>"  # 直接切换到指定端�
 ## 目录结构
 
 ```
-audio-switch/
+AudioSwitch/
 ├── index.html
 ├── package.json
 ├── vite.config.ts
@@ -294,8 +294,8 @@ cargo test             # 单元测试：循环算法、配置读写与损坏恢�
 
 ## 联系方式
 
-- 缺陷与功能建议：优先使用 [GitHub Issues](https://github.com/QKSAMA/audio-switch/issues)（便于追踪与检索）；
-- 其他交流：可以在 Issue 中 @ 维护者 [@QKSAMA](https://github.com/QKSAMA)。
+- 缺陷与功能建议：优先使用 [GitHub Issues](https://github.com/233-3/AudioSwitch/issues)（便于追踪与检索）；
+- 其他交流：可以在 Issue 中 @ 维护者 [@233-3](https://github.com/233-3)。
 
 ## 许可证
 
